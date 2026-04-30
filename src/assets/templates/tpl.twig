@@ -1,1 +1,272 @@
-<p>tpl</p>
+{% set social = ['vk', 'tg', 'ok'] %}
+
+<header class="header">
+</header>
+
+<div class="promo">
+  <div class="container">
+  </div>
+</div>
+
+<div class="section container">
+  <div class="section-title">Что даёт инфузионная терапия?</div>
+  {% set features = [
+    {
+      title: 'Эффект уже после первой процедуры',
+      icon: 'lightning',
+    },
+    {
+      title: '5 капельниц = 3 месяца приема витаминов',
+      icon: 'time',
+    },
+    {
+      title: '100% усвоение — витамины и препараты минуют ЖКТ',
+      icon: 'drop',
+    },
+    {
+      title: 'Без нагрузки на желудок и печень',
+      icon: 'yoga',
+    }
+  ] %}
+  <div class="features">
+    {% for item in features %}
+    <div class="features-item">
+      <div class="features-item__icon">{{ item.icon }}</div>
+      <div class="features-item__title">{{ item.title }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="divider">
+  <div class="divider__wrapper container">
+    <div class="form">
+      <div class="form__header">
+        <div class="form__title">Не знаете какая капельница или процедура вам подойдет?</div>
+        <div class="form__subtitle">Оставьте заявку, наш специалист перезвонит вам и бесплатно проконсультирует вас</div>
+      </div>
+      <form class="form__wrapper">
+        <div class="form-item">
+          <input class="form-input" type="text" placeholder="Ваше имя" />
+        </div>
+        <div class="form-item">
+          <input class="form-input" type="text" placeholder="Ваш номер телефона" />
+        </div>
+        <div class="form-item">
+          <button class="btn" type="submit">Отправить заявку</button>
+        </div>
+        <div class="form-item">
+          <input id="private" class="form-toggler" type="checkbox" checked />
+          <label for="private" class="form-toggler-label">Нажимая кнопку, я соглашаюсь с политикой конфединциальности и пользовательским соглашением</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="section container">
+</div>
+
+<div class="section section_bg_light">
+  <div class="container">
+    <div class="section-title">Врачи нашей клиники</div>
+    <div class="divider divider_type_row">
+      <div class="divider__wrapper divider__wrapper_type_col">
+        <div class="divider__header">
+          <div class="btn btn-secondary">Главный врач клиники, психиатр-нарколог</div>
+          <div class="btn btn-primary">Опыт работы 33 года</div>
+        </div>
+        <div class="divider__content">
+          <div class="divider__title">Константинопольский Константин Константинович</div>
+          <div class="divider__blockquote">Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект однозначно фиксирует необходимость дальнейших направлений развития. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие в значительной степени обусловливает важность экономической целесообразности.</div>
+        </div>
+        <div class="divider__footer">
+          <a class="btn" href="#">Подробнее о специалисте</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper js-slides">
+      <div class="swiper-wrapper">
+        {% for item in [1,2,3,4,5] %}
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__pic">
+              <img class="card__img" src="src/assets/img/card.jpg" alt="" />
+              <div class="btn btn-secondary">Опыт работы: 13 лет</div>
+            </div>
+            <div class="card__wrapper">
+              <a class="card__title" href="#">Константинопольский Константин Константинович</a>
+              <div class="card__subtitle">Главный врач клиники, психиатр-нарколог</div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn-dark" type="button">Записаться</button>
+              <a class="btn btn-light" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section section_type_row">
+    <div class="section__aside">
+      <div class="content">
+        <h2>Лицензии клиники АкваМед</h2>
+        <p>Клиника работает на основании медицинской лицензии и всех необходимых разрешений. Работаем с пациентами на основе заключения договора о предоставлении медицинских услуг - прозрачно, безопасно и с защитой вашего здоровья.</p>
+        <p>Мы используем только сертифицированные препараты и соблюдаем стандарты Министерства здравоохранения РФ. Медицинская лицензия ООО «Кристалл» Л041-01148-78/00347913</p>
+      </div>
+    </div>
+    <div class="section__slides">
+      <div class="swiper js-slides">
+        <div class="swiper-wrapper">
+          {% for item in [1,2,3] %}
+          <div class="doc-item swiper-slide">
+            <div class="doc-item__wrapper">
+              <img src="src/assets/img/doc.jpg" alt="" />
+              <div class="doc-item__intro">Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы</div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Отвечаем на ваши вопросы</div>
+    {% set questions = [
+      'Существуют ли в клинике пакетные предложения или скидки?',
+      'Клиника работает на основании медицинской лицензии и всех необходимых разрешений?',
+      'Существуют ли в клинике пакетные предложения или скидки?',
+      'Клиника работает на основании медицинской лицензии?',
+      'Существуют ли в клинике пакетные предложения или скидки?'
+    ] %}
+    {% for item in questions %}
+    <div class="question-item">
+      <button class="question-item__btn" type="button">
+        {{ item }}
+        <span class="question-item__icon" type="button">+</span>
+      </button>
+      <div class="question-item__wrapper">
+        <div class="question-item__content">
+          <p>Клиника работает на основании медицинской лицензии и всех необходимых разрешений. Работаем с пациентами на основе заключения договора о предоставлении медицинских услуг - прозрачно, безопасно и с защитой вашего здоровья.</p>
+          <div class="card card_type_row">
+            <div class="card__pic">
+              <img class="card__img" src="src/assets/img/card.jpg" alt="" />
+            </div>
+            <div class="card__wrapper">
+              <a class="card__title" href="#">Константинопольский Константин Константинович</a>
+              <div class="card__subtitle">Главный врач клиники, психиатр-нарколог</div>
+              <div class="card__meta">Опыт работы: 13 лет</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__row container">
+    <div class="footer__aside">
+      <a class="logo" href="/">
+        <span class="logo__img"></span>
+        <span class="logo__title">АкваМед</span>
+        <span class="logo__subtitle">Клиника капельниц</span>
+      </a>
+      <form class="search-form">
+        <input class="search-form__field" type="text" />
+        <button class="search-form__btn" type="button"></button>
+      </form>
+      <nav class="social">
+        {% for item in social %}<a class="social__link" href="#">{{ item }}</a>{% endfor %}
+        <button class="social__link social__link_bg_none" type="button">eye</button>
+      </nav>
+    </div>
+    <div class="footer__wrapper footer__wrapper_type_cols">
+      <nav class="footer__nav">
+        {% set contacts_nav = [
+          'О нас',
+          'Специалисты',
+          'Отзывы',
+          'Фотогалерея',
+          'Цены',
+          'Акции',
+          'Статьи',
+          'Ответы на вопросы',
+          'Лицензии'
+        ] %}
+        <a class="footer__nav-link footer__nav-link_type_title" href="#">О клинике</a>
+        {% for item in contacts_nav %}<a class="footer__nav-link" href="#">{{ item }}</a>{% endfor %}
+      </nav>
+      <nav class="footer__nav">
+        {% set med_nav = [
+          'Детокс',
+          'Энергия',
+          'Золушка'
+        ] %}
+        <a class="footer__nav-link footer__nav-link_type_title" href="#">Капельницы</a>
+        {% for item in med_nav %}<a class="footer__nav-link" href="#">Капельница {{ item }}</a>{% endfor %}
+        {% for item in med_nav %}<a class="footer__nav-link" href="#">Капельница {{ item }}</a>{% endfor %}
+        {% for item in med_nav %}<a class="footer__nav-link" href="#">Капельница {{ item }}</a>{% endfor %}
+      </nav>
+      <nav class="footer__nav">
+        <a class="footer__nav-link footer__nav-link_type_title" href="#">Контактные данные</a>
+        {% set contacts = [
+          {
+            title: 'Телефон',
+            value: '+7 (800) 889-99-99',
+            icon: 'phone',
+          },
+          {
+            title: 'Адрес',
+            value: 'Санкт-Петербург, ул. Авиаконструкторов 45к1 ',
+            icon: 'placemark',
+          },
+          {
+            title: 'Электронная почта',
+            value: 'info@kapelnica-med.ru',
+            icon: 'mail',
+          },
+          {
+            title: 'Время работы',
+            value: 'Круглосуточно, 24/7',
+            icon: 'time'
+          }
+        ] %}
+        <div class="contacts">
+          {% for item in contacts %}
+          <div class="contacts">
+            <span class="contacts__icon">{{ item.icon }}</span>
+            <span class="contacts__title">{{ item.title }}</span>
+            <a class="contacts__value" href="#">{{ item.value }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="footer__row container">
+    <div class="footer__aside">
+      <nav class="footer__nav">
+        {% set site_nav = ['Карта сайта', 'Политика конфиденциальности'] %}
+        {% for item in site_nav %}<a class="footer__nav-link" href="#">{{ item }}</a>{% endfor %}
+      </nav>
+      <div class="footer__content">
+        <p>© 2025 Все права защищены</p>
+        <p>Официальный медицинский сайт клиники капельниц и инфузионной терапии «Аквамед» в Москве.</p>
+      </div>
+    </div>
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <p>Сайт носит исключительно информационный характер и не является публичной офертой. Консультационные услуги, оказываемые по телефону, мессенджерам и в соцсетях носят исключительно информационный характер и не являются медицинскими услугами. Медицинская помощь оказывается в домашних условиях по адресу и месту нахождения пациента и месту вызова врача.</p>
+        <p>Медицинские услуги оказываются по лицензии клиники-партнера ООО «Кристалл» Л041-01148-78/00347913 ИНН: 7811740190</p>
+        <p>Адрес оказания медицинских услуг в стационаре : 192148, Россия. г. Санкт-Петербург, улица Седова, дом 37, литер А, помещение 20-Н. 21-Н, офис 17</p>
+      </div>
+    </div>
+  </div>
+</footer>
