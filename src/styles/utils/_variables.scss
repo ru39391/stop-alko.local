@@ -1,0 +1,52 @@
+@use 'sass:color';
+
+:root {
+  --font-family-body: 'Manrope', sans-serif;
+  --font-family-title: 'LT Wave Bold', sans-serif;
+
+  --font-size-heading-xxl: 70px;
+  --font-size-heading-xl: 54px;
+  --font-size-heading-lg: 44px;
+  --font-size-heading-md: 40px;
+  --font-size-heading: 30px;
+  --font-size-xxl: 26px;
+  --font-size-xl: 24px;
+  --font-size-lg: 22px;
+  --font-size-md: 20px;
+  --font-size-body: 18px;
+  --font-size-sm: 16px;
+  --font-size-xs: 14px;
+  --font-size-xxs: 12px;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --line-height-xxxl: 1.5;
+  --line-height-xxl: 1.2;
+  --line-height-xl: 1.16;
+  --line-height-lg: 1.1;
+  --line-height-body: 1;
+
+  --color-white: #ffffff;
+  --color-white-disabled: rgba(255, 255, 255, .5);
+  --color-black: #000000;
+  --color-body: #004728;
+
+  --color-light: #F5F8F5;
+  --color-dark: #3D5B4E;
+
+  --color-border: rgba(61, 91, 78, .6);
+  --color-border-light: rgba(0, 71, 40, .2);
+
+  --color-primary: #007844;
+  --color-primary-active: rgba(0, 120, 68, .8);
+  --color-primary-disabled: rgba(0, 120, 68, .5);
+
+  --color-secondary: #78D864;
+  --color-secondary-active: rgba(120, 216, 100, .8);
+
+  --color-neutral: #E1F0E1;
+  --color-neutral-disabled: rgba(225, 240, 225, .5);
+}

@@ -8,7 +8,6 @@
 /*
 @use 'components/btn';
 @use 'components/top';
-@use 'components/cities';
 @use 'components/langs';
 @use 'components/search';
 @use 'components/nav';
@@ -22,6 +21,7 @@
 @use 'components/promo';
 @use 'components/shadow';
 @use 'components/pagenav';
-@import 'base/fonts';
 @import 'components/bg';
 */
+@use 'components/contacts';
+@import 'base/fonts';

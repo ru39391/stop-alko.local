@@ -1,0 +1,62 @@
+@use "../utils/helpers" as *;
+
+.footer {
+  @extend %d-flex-column;
+  @include py(40px);
+  gap: 40px 0;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.footer__row {
+  @extend %d-flex-column;
+  gap: 40px 0;
+}
+
+.footer__aside {
+  @extend %d-flex-column;
+  gap: 40px 0;
+}
+
+.footer__content {
+  @extend %d-flex-column;
+  gap: 16px 0;
+
+  p {
+    @include fs-lh(var(--font-size-xxs),var(--line-height-xxxl));
+    font-weight: var(--fw-medium);
+  }
+
+  &.footer__content_type_copyright {
+    p {
+      font-size: var(--font-size-xs);
+    }
+  }
+}
+
+.footer__wrapper {
+  @extend %d-flex-column;
+  gap: 40px 0;
+}
+
+.footer__nav {
+  @extend %d-flex-column;
+  gap: 14px 0;
+
+  &.footer__nav_type_contacts {
+    gap: 24px 0;
+  }
+}
+
+.footer__nav-link {
+  @include fs-lh(var(--font-size-sm),var(--line-height-xxxl));
+  font-weight: var(--fw-medium);
+  color: var(--color-body);
+
+  &.footer__nav-link_type_title {
+    @include fs-lh(var(--font-size-body),var(--line-height-body));
+    font-weight: var(--fw-semibold);
+    color: var(--color-primary);
+    margin: 0 0 4px;
+  }
+}

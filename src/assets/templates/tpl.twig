@@ -5,6 +5,19 @@
 
 <div class="promo">
   <div class="container">
+    <div class="promo__wrapper">
+      <section class="promo__content">
+        <h1>Клиника капельниц АкваМед <span>в Санкт-Петербурге</span></h1>
+        <p>Инфузионные программы под контролем врачей: детокс, энергия, красота и поддержка иммунитета</p>
+      </section>
+
+      <div class="promo__features">
+      </div>
+      <div class="promo__features">
+      </div>
+      <div class="promo__footer">
+      </div>
+    </div>
   </div>
 </div>
 
@@ -214,7 +227,7 @@
         {% for item in med_nav %}<a class="footer__nav-link" href="#">Капельница {{ item }}</a>{% endfor %}
         {% for item in med_nav %}<a class="footer__nav-link" href="#">Капельница {{ item }}</a>{% endfor %}
       </nav>
-      <nav class="footer__nav">
+      <nav class="footer__nav footer__nav_type_contacts">
         <a class="footer__nav-link footer__nav-link_type_title" href="#">Контактные данные</a>
         {% set contacts = [
           {
@@ -240,8 +253,8 @@
         ] %}
         <div class="contacts">
           {% for item in contacts %}
-          <div class="contacts">
-            <span class="contacts__icon">{{ item.icon }}</span>
+          <div class="contacts__item">
+            <span class="contacts__icon"><img src="src/assets/icons/{{ item.icon }}-icon.svg" alt="" /></span>
             <span class="contacts__title">{{ item.title }}</span>
             <a class="contacts__value" href="#">{{ item.value }}</a>
           </div>
@@ -256,7 +269,7 @@
         {% set site_nav = ['Карта сайта', 'Политика конфиденциальности'] %}
         {% for item in site_nav %}<a class="footer__nav-link" href="#">{{ item }}</a>{% endfor %}
       </nav>
-      <div class="footer__content">
+      <div class="footer__content footer__content_type_copyright">
         <p>© 2025 Все права защищены</p>
         <p>Официальный медицинский сайт клиники капельниц и инфузионной терапии «Аквамед» в Москве.</p>
       </div>

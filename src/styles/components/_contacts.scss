@@ -1,0 +1,33 @@
+@use "../utils/helpers" as *;
+
+.contacts {
+  @extend %d-flex-column;
+  gap: 24px 0;
+}
+
+.contacts__item {
+  gap: 16px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 24px 1fr;
+  grid-template-areas:
+    "media title title"
+    "media value value";
+}
+
+.contacts__icon {
+  grid-area: media;
+  color: var(--color-secondary);
+}
+
+.contacts__title {
+  grid-area: title;
+  color: var(--color-dark);
+  font-size: var(--font-size-xs);
+}
+
+.contacts__value {
+  grid-area: value;
+  color: var(--color-body);
+  font-weight: var(--fw-semibold);
+}
