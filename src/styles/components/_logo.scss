@@ -1,0 +1,28 @@
+.logo {
+  gap: 4px 12px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 56px 1fr;
+  grid-template-areas:
+    "img title title"
+    "img subtitle subtitle";
+  color: var(--color-primary);
+  line-height: var(--line-height-body);
+}
+
+.logo__img {
+  grid-area: img;
+}
+
+.logo__title {
+  font-size: 34px;
+  grid-area: title;
+  font-family: var(--font-family-title);
+  font-weight: var(--fw-medium);
+}
+
+.logo__subtitle {
+  font-size: var(--font-size-sm);
+  grid-area: subtitle;
+  color: var(--color-dark);
+}

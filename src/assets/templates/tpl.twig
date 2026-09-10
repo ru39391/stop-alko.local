@@ -87,7 +87,7 @@
       <div class="divider__wrapper divider__wrapper_type_col">
         <div class="divider__header">
           <div class="btn btn-secondary">Главный врач клиники, психиатр-нарколог</div>
-          <div class="btn btn-primary">Опыт работы 33 года</div>
+          <div class="btn">Опыт работы 33 года</div>
         </div>
         <div class="divider__content">
           <div class="divider__title">Константинопольский Константин Константинович</div>
@@ -187,17 +187,20 @@
   <div class="footer__row container">
     <div class="footer__aside">
       <a class="logo" href="/">
-        <span class="logo__img"></span>
+        <span class="logo__img"><img src="src/assets/icons/logo-icon.svg" alt="" /></span>
         <span class="logo__title">АкваМед</span>
         <span class="logo__subtitle">Клиника капельниц</span>
       </a>
-      <form class="search-form">
-        <input class="search-form__field" type="text" />
-        <button class="search-form__btn" type="button"></button>
-      </form>
+      <div class="footer__wrapper footer__wrapper_gap_min">
+        <form class="search-form">
+          <input class="search-form__field" type="text" placeholder="Поиск по сайту" />
+          <button class="search-form__btn" type="button"><img src="src/assets/icons/search-icon.svg" alt="" /></button>
+        </form>
+        <a class="btn" href="#">Капельница на дому</a>
+      </div>
       <nav class="social">
-        {% for item in social %}<a class="social__link" href="#">{{ item }}</a>{% endfor %}
-        <button class="social__link social__link_bg_none" type="button">eye</button>
+        {% for item in social %}<a class="social__link" href="#"><img src="src/assets/icons/{{ item }}-icon.svg" alt="" /></a>{% endfor %}
+        <button class="social__link social__link_bg_none" type="button"><img src="src/assets/icons/eye-icon.svg" alt="" /></button>
       </nav>
     </div>
     <div class="footer__wrapper footer__wrapper_type_cols">

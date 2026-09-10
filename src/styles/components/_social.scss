@@ -1,0 +1,58 @@
+@use "../utils/helpers" as *;
+
+.social {
+  @extend %d-flex-wrap;
+  align-items: center;
+  gap: 0 10px
+}
+
+.social__link {
+  @extend %d-flex-column;
+  @extend %d-flex-centered;
+  @include wh(56px);
+  @include fw(56px);
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--color-primary);
+  background-color: var(--color-neutral);
+  transition: all .3s ease;
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+
+  &:active,
+  &:focus {
+    color: var(--color-white);
+    background-color: var(--color-primary-active);
+  }
+
+  &:disabled,
+  &.social__link_disabled {
+    opacity: .5;
+    color: var(--color-primary);
+    background-color: #EEF8EE;
+  }
+
+  &.social__link_bg_none {
+    color: var(--color-primary);
+    background-color: var(--color-transp);
+
+    &:hover {
+      color: var(--color-secondary);
+      background-color: var(--color-transp);
+    }
+
+    &:active,
+    &:focus {
+      color: var(--color-primary-active);
+      background-color: var(--color-transp);
+    }
+
+    &:disabled,
+    &.social__link_disabled {
+      background-color: var(--color-transp);
+    }
+  }
+}

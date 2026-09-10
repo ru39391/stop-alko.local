@@ -37,6 +37,10 @@
 .footer__wrapper {
   @extend %d-flex-column;
   gap: 40px 0;
+
+  &.footer__wrapper_gap_min {
+    gap: 12px 0;
+  }
 }
 
 .footer__nav {

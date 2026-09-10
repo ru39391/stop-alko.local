@@ -5,6 +5,12 @@
 @use 'layout/section';
 @use 'layout/header';
 @use 'layout/footer';
+@use 'components/btn';
+@use 'components/logo';
+@use 'components/contacts';
+@use 'components/search';
+@use 'components/social';
+@import 'base/fonts';
 /*
 @use 'components/btn';
 @use 'components/top';
@@ -23,5 +29,3 @@
 @use 'components/pagenav';
 @import 'components/bg';
 */
-@use 'components/contacts';
-@import 'base/fonts';
