@@ -158,17 +158,18 @@
       'Существуют ли в клинике пакетные предложения или скидки?'
     ] %}
     {% for item in questions %}
-    <div class="question-item">
-      <button class="question-item__btn" type="button">
+    <div class="question-item accordion-item js-accordion">
+      <button class="question-item__btn js-accordion-btn" type="button">
         {{ item }}
-        <span class="question-item__icon" type="button">+</span>
+        <span class="question-item__icon" type="button"><img src="src/assets/icons/plus-icon.svg" alt="" /></span>
+        <span class="question-item__icon question-item__icon_hidden" type="button"><img src="src/assets/icons/minus-icon.svg" alt="" /></span>
       </button>
-      <div class="question-item__wrapper">
+      <div class="question-item__wrapper accordion-content">
         <div class="question-item__content">
           <p>Клиника работает на основании медицинской лицензии и всех необходимых разрешений. Работаем с пациентами на основе заключения договора о предоставлении медицинских услуг - прозрачно, безопасно и с защитой вашего здоровья.</p>
           <div class="card card_type_row">
             <div class="card__pic">
-              <img class="card__img" src="src/assets/img/card.jpg" alt="" />
+              <img class="card__img" src="src/assets/img/card.png" alt="" />
             </div>
             <div class="card__wrapper">
               <a class="card__title" href="#">Константинопольский Константин Константинович</a>

@@ -1,0 +1,36 @@
+@use "../utils/helpers" as *;
+
+.card {
+  @include border(1px 0 0,#DFEDE0);
+  padding: 20px 0 0;
+
+  &.card_type_row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 0 13px;
+  }
+}
+
+.card__img {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #E5ECE5;
+}
+
+.card__wrapper {
+  @extend %d-flex-column;
+  @include fs-lh(var(--font-size-xs),var(--line-height-body));
+  font-weight: var(--fw-medium);
+  color: var(--color-primary);
+  gap: 16px 0;
+}
+
+.card__subtitle {
+  line-height: var(--line-height-xxl);
+  color: var(--color-dark);
+}
+
+.card__title {
+  @include fs-lh(var(--font-size-sm),var(--line-height-xxl));
+  color: var(--color-body);
+}

@@ -1,0 +1,68 @@
+@use "../utils/helpers" as *;
+
+.question-item {
+  @extend %d-flex-column;
+  gap: 8px 0;
+  margin: 0 0 10px;
+
+  &.is-active {
+    .question-item__btn {
+      background-color: var(--color-neutral);
+    }
+
+    .question-item__icon {
+      display: none;
+      background-color: var(--color-white);
+
+      &.question-item__icon_hidden {
+        display: flex;
+      }
+    }
+  }
+}
+
+.question-item__btn {
+  @include fs-lh(var(--font-size-sm),var(--line-height-md));
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 16px;
+  padding: 16px;
+  text-align: left;
+  border-radius: 12px;
+  color: var(--color-body);
+  background-color: var(--color-light);
+  transition: all .3s ease;
+}
+
+.question-item__icon {
+  @extend %d-flex-column;
+  @extend %d-flex-centered;
+  @include wh(46px);
+  @include fw(46px);
+  padding: 4px;
+  pointer-events: none;
+  border-radius: 8px;
+  color: var(--color-primary);
+  background-color: #E5ECE5;
+  transition: all .3s ease;
+
+  &.question-item__icon_hidden {
+    display: none;
+  }
+}
+
+.question-item__content {
+  color: var(--color-dark);
+  padding: 20px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(1, 79, 45, .2);
+  background-color: var(--color-light);
+
+  p {
+    @include fs-lh(var(--font-size-xs),var(--line-height-md));
+    font-weight: var(--fw-medium);
+    margin: 0 0 20px;
+  }
+}

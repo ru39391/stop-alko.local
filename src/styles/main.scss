@@ -5,14 +5,16 @@
 @use 'layout/section';
 @use 'layout/header';
 @use 'layout/footer';
+@use 'components/accordion';
 @use 'components/btn';
 @use 'components/logo';
+@use 'components/card';
 @use 'components/contacts';
 @use 'components/search';
 @use 'components/social';
+@use 'components/question';
 @import 'base/fonts';
 /*
-@use 'components/btn';
 @use 'components/top';
 @use 'components/langs';
 @use 'components/search';

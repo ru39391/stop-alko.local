@@ -1,5 +1,6 @@
 // @ts-ignore
 import Twig, { Template } from 'twig';
+import Accordion from './modules/accordion';
 /*
 import { initSlides } from './modules/slides';
 import GridSlides from './modules/grid-slides';
@@ -31,7 +32,7 @@ const fetchTemplate = async (): Promise<Template | undefined> => {
 }
 
 const initApp = () => {
-  console.log('initApp');
+  new Accordion();
   /*
   initSlides('.js-slides');
 

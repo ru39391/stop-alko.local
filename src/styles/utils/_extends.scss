@@ -27,11 +27,11 @@
 }
 
 %section-title {
-  @include fs-lh(var(--font-size-xl),var(--line-height-lg));
+  @include fs-lh(var(--font-size-xl),var(--line-height-md));
   font-family: var(--font-family-title);
   font-weight: var(--fw-bold);
 
   @media #{$breakpoint-up-md} {
-    @include fs-lh(var(--font-size-xxl),var(--line-height-xl));
+    @include fs-lh(var(--font-size-xxl),var(--line-height-md));
   }
 }

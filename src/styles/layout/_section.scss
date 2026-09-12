@@ -1,0 +1,13 @@
+@use "../utils/helpers" as *;
+
+.section {
+  @include py(40px);
+}
+
+.section-title {
+  @include fs-lh(var(--font-size-xxl),var(--line-height-md));
+  font-weight: var(--fw-bold);
+  font-family: var(--font-family-title);
+  color: var(--color-body);
+  margin-bottom: 32px;
+}
