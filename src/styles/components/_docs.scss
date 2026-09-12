@@ -1,0 +1,27 @@
+@use "../utils/helpers" as *;
+
+.doc-item {
+  @include px(5px);
+}
+
+.doc-item__wrapper {
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(1, 79, 45, .2);
+}
+
+.doc-item__intro {
+  @include fs-lh(var(--font-size-xs),var(--line-height-xxxl));
+  font-weight: var(--fw-medium);
+  color: var(--color-dark);
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #DFEDE0;
+  backdrop-filter: blur(4px);
+  background-color: rgba(245, 248, 245, .5);
+}

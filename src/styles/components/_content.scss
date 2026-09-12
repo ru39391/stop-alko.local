@@ -1,0 +1,14 @@
+@use "../utils/helpers" as *;
+
+.content {
+  h2 {
+    @extend %section-title;
+  }
+
+  p {
+    @include fs-lh(var(--font-size-sm),var(--line-height-md));
+    font-weight: var(--fw-medium);
+    color: var(--color-dark);
+    margin-bottom: 16px;
+  }
+}
