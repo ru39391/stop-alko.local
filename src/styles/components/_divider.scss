@@ -1,0 +1,41 @@
+@use "../utils/helpers" as *;
+
+.divider {
+  @extend %d-flex-column;
+  gap: 30px 0;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.divider__header {
+  @extend %d-flex-column;
+  align-items: flex-start;
+  gap: 8px 0;
+}
+
+.divider__wrapper {
+  padding: 16px 16px 0;
+
+  &.divider__wrapper_type_col {
+    @extend %d-flex-column;
+    gap: 20px 0;
+
+    .divider__content {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.divider__title {
+  @extend %section-title;
+  @include fs-lh(var(--font-size-md),var(--line-height-md));
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.divider__blockquote {
+  @include fs-lh(var(--font-size-sm),var(--line-height-xxxl));
+
+}

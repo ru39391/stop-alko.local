@@ -83,38 +83,57 @@
 <div class="section section_bg_light">
   <div class="container">
     <div class="section-title">Врачи нашей клиники</div>
+  </div>
+  <div class="container container_px_none">
     <div class="divider divider_type_row">
       <div class="divider__wrapper divider__wrapper_type_col">
         <div class="divider__header">
-          <div class="btn btn-secondary">Главный врач клиники, психиатр-нарколог</div>
-          <div class="btn">Опыт работы 33 года</div>
+          <div class="btn btn-badge">
+            <span class="btn-caption">Главный врач клиники</span>
+          </div>
+          <div class="btn btn-badge">
+              <span class="btn-caption">психиатр-нарколог</span>
+          </div>
+          <div class="btn btn-badge btn-border">
+            <span class="btn-caption">Опыт работы 33 года</span>
+          </div>
         </div>
         <div class="divider__content">
           <div class="divider__title">Константинопольский Константин Константинович</div>
           <div class="divider__blockquote">Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект однозначно фиксирует необходимость дальнейших направлений развития. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие в значительной степени обусловливает важность экономической целесообразности.</div>
         </div>
         <div class="divider__footer">
-          <a class="btn" href="#">Подробнее о специалисте</a>
+          <a class="btn btn-secondary" href="#">Подробнее о специалисте</a>
         </div>
       </div>
+      <div class="divider__aside">
+        <img src="src/assets/img/doctor.png" alt="" />
+      </div>
     </div>
-
-    <div class="swiper js-slides">
+  </div>
+  <div class="container">
+    <div class="swiper swiper_type_carousel js-carousel">
       <div class="swiper-wrapper">
         {% for item in [1,2,3,4,5] %}
-        <div class="swiper-slide">
-          <div class="card">
+        <div class="swiper-slide swiper-slide_type_carousel">
+          <div class="card card_type_col card_bg_white">
             <div class="card__pic">
-              <img class="card__img" src="src/assets/img/card.jpg" alt="" />
-              <div class="btn btn-secondary">Опыт работы: 13 лет</div>
+              <img class="card__img" src="src/assets/img/doctor.png" alt="" />
+              <div class="card_badge btn btn-badge">
+                <span class="btn-caption">Опыт работы: 13 лет</span>
+              </div>
             </div>
             <div class="card__wrapper">
               <a class="card__title" href="#">Константинопольский Константин Константинович</a>
               <div class="card__subtitle">Главный врач клиники, психиатр-нарколог</div>
             </div>
             <div class="card__footer">
-              <button class="btn btn-dark" type="button">Записаться</button>
-              <a class="btn btn-light" href="#">Подробнее</a>
+              <button class="btn" type="button">
+                <span class="btn-caption">Записаться</span>
+              </button>
+              <a class="btn btn-primary" href="#">
+                <span class="btn-caption">Подробнее</span>
+              </a>
             </div>
           </div>
         </div>
@@ -134,11 +153,11 @@
       </div>
     </div>
     <div class="section__slides">
-      <div class="swiper js-carousel">
+      <div class="swiper swiper_type_carousel js-carousel">
         <div class="swiper-wrapper">
-          {% for item in [1,2,3] %}
-          <div class="doc-item swiper-slide">
-            <div class="doc-item__wrapper">
+          {% for item in [1,2,3,4,5] %}
+          <div class="swiper-slide swiper-slide_type_carousel">
+            <div class="doc-item">
               <img src="src/assets/img/doc.png" alt="" />
               <div class="doc-item__intro">Приятно, граждане, наблюдать, как многие известные личности своевременно верифицированы</div>
             </div>

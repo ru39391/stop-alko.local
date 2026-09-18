@@ -1,0 +1,15 @@
+@use "../utils/helpers" as *;
+
+.swiper {
+  &.swiper_type_carousel {
+    @include mx(-5px);
+  }
+}
+
+.swiper-slide {
+  @include px(5px);
+
+  &.swiper-slide_type_carousel {
+    max-width: 300px;
+  }
+}

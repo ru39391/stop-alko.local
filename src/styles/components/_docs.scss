@@ -1,10 +1,6 @@
 @use "../utils/helpers" as *;
 
 .doc-item {
-  @include px(5px);
-}
-
-.doc-item__wrapper {
   overflow: hidden;
   position: relative;
   border-radius: 16px;

@@ -8,7 +8,40 @@
     display: grid;
     grid-template-columns: 80px 1fr;
     gap: 0 13px;
+
+    .card__pic {
+      margin-bottom: 0;
+    }
+
+    .card__wrapper {
+      margin-bottom: 0;
+    }
   }
+
+  &.card_type_col {
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  &.card_bg_white {
+    background-color: var(--color-white);
+  }
+}
+
+.card_badge {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.card__pic {
+  position: relative;
+  margin: 0 0 20px;
+}
+
+.card__wrapper {
+  margin: 0 0 24px;
 }
 
 .card__img {
@@ -33,4 +66,9 @@
 .card__title {
   @include fs-lh(var(--font-size-sm),var(--line-height-xxl));
   color: var(--color-body);
+}
+
+.card__footer {
+  @extend %d-flex-column;
+  gap: 10px 0;
 }

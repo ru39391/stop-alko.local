@@ -1,8 +1,8 @@
 // @ts-ignore
 import Twig, { Template } from 'twig';
 import Accordion from './modules/accordion';
+import { handleCarousel, initSlides, slidesConfig } from './modules/slides';
 /*
-import { initSlides } from './modules/slides';
 import GridSlides from './modules/grid-slides';
 import Pagenav from './modules/pagenav';
 import Tabs from './modules/tabs';
@@ -33,9 +33,9 @@ const fetchTemplate = async (): Promise<Template | undefined> => {
 
 const initApp = () => {
   new Accordion();
-  /*
-  initSlides('.js-slides');
 
+  handleCarousel(slidesConfig.carouselSel);
+  /*
   new GridSlides({
     parentSel: '.js-grid-slides',
     wrapperSel: '.js-grid-wrapper',

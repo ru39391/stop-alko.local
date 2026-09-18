@@ -25,6 +25,10 @@ body {
   @include px(10px);
   @include mx(auto);
   max-width: 1740px;
+
+  &.container_px_none {
+    @include px(0);
+  }
 }
 
 .ta-center {

@@ -2,6 +2,10 @@
 
 .section {
   @include py(40px);
+
+  &.section_bg_light {
+    background-color: var(--color-light);
+  }
 }
 
 .section-title {
