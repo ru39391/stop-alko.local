@@ -12,11 +12,12 @@
 @use 'components/card';
 @use 'components/contacts';
 @use 'components/content';
-@use 'components/divider';
+@use 'components/form';
 @use 'components/search';
 @use 'components/social';
 @use 'components/swiper';
 @use 'components/question';
+@import 'components/divider';
 @import 'base/fonts';
 /*
 @use 'components/top';
@@ -26,8 +27,6 @@
 @use 'components/pathway';
 @use 'components/company';
 @use 'components/features';
-@use 'components/hardware';
 @use 'components/promo';
 @use 'components/pagenav';
-@import 'components/bg';
 */

@@ -1,0 +1,54 @@
+@use "../utils/helpers" as *;
+
+.form {
+  @extend %d-flex-column;
+  gap: 40px 0;
+}
+
+.form__header {
+
+}
+
+.form__title {
+  @extend %section-title;
+  @include fs-lh(var(--font-size-xxl),var(--line-height-md));
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.form__subtitle {
+  @include fs-lh(var(--font-size-xs),var(--line-height-md));
+  color: var(--color-white);
+}
+
+.form__wrapper {
+  @extend %d-flex-column;
+  gap: 8px 0;
+}
+
+.form__footer {
+  @extend %d-flex-column;
+  flex-direction: column-reverse;
+  gap: 16px 0;
+}
+
+.form-item {
+}
+
+.form-input {
+
+}
+
+.form-toggler-row {
+  display: flex;
+  gap: 0 10px;
+}
+
+.form-toggler {
+
+}
+
+.form-toggler-label {
+  @include fs-lh(var(--font-size-xxs),var(--line-height-xxl));
+  color: rgba(255,255,255,.7);
+}

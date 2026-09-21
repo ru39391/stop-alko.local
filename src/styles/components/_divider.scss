@@ -3,10 +3,13 @@
 .divider {
   @extend %d-flex-column;
   gap: 30px 0;
-  border-radius: 16px;
   margin-bottom: 32px;
   color: var(--color-white);
   background-color: var(--color-primary);
+
+  &.divider_type_rounded {
+    border-radius: 16px;
+  }
 }
 
 .divider__header {
@@ -37,5 +40,10 @@
 
 .divider__blockquote {
   @include fs-lh(var(--font-size-sm),var(--line-height-xxxl));
+  @extend %d-flex-column;
+  gap: 20px 0;
+}
 
+.divider__aside {
+  background: url('#{$assets}/img/divider.png') no-repeat scroll center top rgba(0,0,0,0);
 }

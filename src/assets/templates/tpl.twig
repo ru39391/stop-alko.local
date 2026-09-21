@@ -51,28 +51,37 @@
   </div>
 </div>
 
-<div class="divider">
-  <div class="divider__wrapper container">
-    <div class="form">
-      <div class="form__header">
-        <div class="form__title">Не знаете какая капельница или процедура вам подойдет?</div>
-        <div class="form__subtitle">Оставьте заявку, наш специалист перезвонит вам и бесплатно проконсультирует вас</div>
+<div class="divider-holder">
+  <div class="divider container container_px_none">
+    <div class="divider__wrapper">
+      <div class="form">
+        <div class="form__header">
+          <div class="form__title">Не знаете какая капельница или процедура вам подойдет?</div>
+          <div class="form__subtitle">Оставьте заявку, наш специалист перезвонит вам и бесплатно проконсультирует вас</div>
+        </div>
+        <form class="form__wrapper">
+          <div class="form-item">
+            <input class="form-input" type="text" placeholder="Ваше имя" />
+          </div>
+          <div class="form-item">
+            <input class="form-input" type="text" placeholder="Ваш номер телефона" />
+          </div>
+          <div class="form__footer">
+            <div class="form-item">
+              <button class="btn btn-secondary" type="submit">Отправить заявку</button>
+            </div>
+            <div class="form-toggler-row">
+              <input id="private" class="form-toggler" type="checkbox" checked />
+              <label for="private" class="form-toggler-label">
+                Нажимая кнопку, я соглашаюсь с <a href="#">политикой конфединциальности</a> и <a href="#">пользовательским соглашением</a>
+              </label>
+            </div>
+          </div>
+        </form>
       </div>
-      <form class="form__wrapper">
-        <div class="form-item">
-          <input class="form-input" type="text" placeholder="Ваше имя" />
-        </div>
-        <div class="form-item">
-          <input class="form-input" type="text" placeholder="Ваш номер телефона" />
-        </div>
-        <div class="form-item">
-          <button class="btn" type="submit">Отправить заявку</button>
-        </div>
-        <div class="form-item">
-          <input id="private" class="form-toggler" type="checkbox" checked />
-          <label for="private" class="form-toggler-label">Нажимая кнопку, я соглашаюсь с политикой конфединциальности и пользовательским соглашением</label>
-        </div>
-      </form>
+    </div>
+    <div class="divider__aside">
+      <img src="src/assets/img/form-doctor.png" alt="" />
     </div>
   </div>
 </div>
@@ -85,7 +94,7 @@
     <div class="section-title">Врачи нашей клиники</div>
   </div>
   <div class="container container_px_none">
-    <div class="divider divider_type_row">
+    <div class="divider divider_type_row divider_type_rounded">
       <div class="divider__wrapper divider__wrapper_type_col">
         <div class="divider__header">
           <div class="btn btn-badge">
@@ -100,7 +109,10 @@
         </div>
         <div class="divider__content">
           <div class="divider__title">Константинопольский Константин Константинович</div>
-          <div class="divider__blockquote">Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект однозначно фиксирует необходимость дальнейших направлений развития. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие в значительной степени обусловливает важность экономической целесообразности.</div>
+          <div class="divider__blockquote">
+            <div class="divider__blockquote-icon"><img src="src/assets/icons/blockquote-icon.svg" alt="" /></div>
+            Ясность нашей позиции очевидна: курс на социально-ориентированный национальный проект однозначно фиксирует необходимость дальнейших направлений развития. В своём стремлении повысить качество жизни, они забывают, что социально-экономическое развитие в значительной степени обусловливает важность экономической целесообразности.
+          </div>
         </div>
         <div class="divider__footer">
           <a class="btn btn-secondary" href="#">Подробнее о специалисте</a>
